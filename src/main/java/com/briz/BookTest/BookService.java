@@ -8,4 +8,5 @@ void addBook(Book book);
 List<Book> allBooks();
 Book updateBook(Book book,int id);
 Book deleteBook(int id);
+Book findById(int id);
 }

@@ -3,6 +3,7 @@ package com.briz.BookTest;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -38,5 +39,11 @@ public void dele(int id)
 {
 	bserv.deleteBook(id);
 	System.out.println("book deleted ");
+}
+@RequestMapping("/by/{id}")
+public Book byid(@PathVariable int id)
+{
+	return bserv.findById(id);
+	
 }
 }

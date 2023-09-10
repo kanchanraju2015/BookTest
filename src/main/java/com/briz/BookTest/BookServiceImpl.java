@@ -44,4 +44,12 @@ public class BookServiceImpl implements BookService
 		return book;
 			}
 
+	@Override
+	public Book findById(int id) 
+	{
+		Book book=brepo.findById(id).get();
+	
+	     return book;
+	}
+
 }
