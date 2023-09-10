@@ -51,5 +51,10 @@ public class BookServiceImpl implements BookService
 	
 	     return book;
 	}
+	@RequestMapping("/by/{bookname}")
+	public List<Book> bybookname(@PathVariable String bookname)
+	{
+		return bserv.findByBookname(bookname);
+	}
 
 }
