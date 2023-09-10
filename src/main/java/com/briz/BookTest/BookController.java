@@ -46,4 +46,9 @@ public Book byid(@PathVariable int id)
 	return bserv.findById(id);
 	
 }
+@RequestMapping("/by/{bookname}")
+public List<Book> byname(@PathVariable String bookname)
+{
+	return bserv.findByBookname(bookname);
+}
 }
