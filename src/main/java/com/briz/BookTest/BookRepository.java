@@ -1,5 +1,6 @@
 package com.briz.BookTest;
 
-public interface BookRepository {
+public interface BookRepository 
+{
 
 }

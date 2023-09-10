@@ -1,5 +1,17 @@
 package com.briz.BookTest;
 
-public class BookController {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
+public class BookController 
+{
+@Autowired
+BookRepository brepo;
+@RequestMapping("/booktest")
+public String test()
+{
+	return "this is book test";
+}
 }
