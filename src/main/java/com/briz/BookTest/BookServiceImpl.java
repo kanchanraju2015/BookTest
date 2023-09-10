@@ -15,7 +15,7 @@ public class BookServiceImpl implements BookService
 	public void addBook(Book book)
 	{
 	brepo.save(book);
-	System.out.println("book saved into database");
+//	System.out.println("book saved into database");
 		
 	}
 
